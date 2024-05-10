@@ -60,7 +60,7 @@
                                         </p>
                                         <p class="card-text" style="font-size: 0.7rem;">Average Rating: {{
                                             b.averageRating }}</p>
-                                        <button class="btn btn-primary" (click)="toggleLike(b)">
+                                        <button class="btn btn-dark" (click)="toggleLike(b)">
                                             {{ b.likedByCurrentUser ? 'Unlike' : 'Like' }}
                                         </button>
                                         <div id="rating ">
@@ -69,7 +69,7 @@
                                                 [class.filled]="b.selectedRating >= rating">&#9733;</span>
                                         </div>
                                         <textarea class="form-control" rows="3" [(ngModel)]="newComment"></textarea>
-                                        <button class="btn btn-primary mt-2" (click)="addComment(newComment)">Post
+                                        <button class="btn btn-dark mt-2 " (click)="addComment(newComment)">Post
                                             Comment</button>
 
 
